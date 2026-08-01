@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grace's Portfolio — Product Designer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Grace's Portfolio</a>
+      
+      <nav class="nav-links">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#approach" class="nav-link">My Approach</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button onclick="openContactModal()" class="btn btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Contact Me
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          Available for New Opportunities
+        </div>
+        
+        <h1 class="hero-title">Hey, I'm Grace.</h1>
+        
+        <p class="hero-subtitle">
+          I love to create <span class="inclusive-pill">inclusive</span> designs for digital products.
+        </p>
+
+        <p class="hero-bio">
+          UX/UI Designer with 3+ years of experience transforming complex problem spaces into intuitive, accessible, and delightful web and mobile experiences.
+        </p>
+
+        <div class="hero-actions">
+          <button onclick="openContactModal()" class="btn btn-primary btn-large">
+            Work with Me
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <a href="#projects" class="btn btn-secondary btn-large">
+            Explore Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="portrait-wrapper">
+        <img 
+          src="src/assets/images/grace_profile_photo_1784676417215.jpg" 
+          alt="Grace Profile Portrait" 
+          class="portrait-img"
+          onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80'"
+        />
+        <div class="portrait-quote">
+          <p class="quote-text">"Human-centered design at every step."</p>
+          <p class="quote-author">Grace — UX/UI Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Selected Works</span>
+          <h2 class="section-title">Featured Case Studies</h2>
+        </div>
+        <p class="section-desc">
+          A showcase of product strategy, visual architecture, and responsive interface design.
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-container">
+        <!-- Injected dynamically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- MY APPROACH SECTION -->
+  <section id="approach" class="approach-section container">
+    <div style="text-align: center; max-width: 42rem; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem;">
+      <span class="section-tag">Design Philosophy</span>
+      <h2 class="section-title" style="margin: 0;">My Approach</h2>
+      <p class="section-desc" style="margin: 0 auto;">
+        How I turn messy concepts into clear, empathetic, and high-converting products.
+      </p>
+    </div>
+
+    <div class="approach-grid">
+      <div class="approach-card">
+        <div class="approach-num">01</div>
+        <h3 class="approach-title">Process & Purpose</h3>
+        <p class="approach-desc">
+          I always keep in mind who the intended audience is and the end goal of the product. Always wondering what core problems we're seeking to solve.
+        </p>
+      </div>
+
+      <div class="approach-card">
+        <div class="approach-num">02</div>
+        <h3 class="approach-title">Iterative & Refined</h3>
+        <p class="approach-desc">
+          I take an iterative approach to ensure the final result aligns with your creative vision. We'll refine your site's design leaving no detail overlooked.
+        </p>
+      </div>
+
+      <div class="approach-card">
+        <div class="approach-num">03</div>
+        <h3 class="approach-title">Human-Centered & Inclusive</h3>
+        <p class="approach-desc">
+          Accessibility is built into the fabric of my design process. Clear typography and logical contrast ensure every user enjoys an intuitive experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS & BADGES SECTION -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <h4 class="stat-value">3+ Years Experience</h4>
+        <p class="stat-label">Web, Mobile & Enterprise Apps</p>
+        <p class="stat-detail">Specialized in end-to-end product design, accessibility, and systems.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4 class="stat-value">Team Collaborator</h4>
+        <p class="stat-label">Flexible & Empathetic</p>
+        <p class="stat-detail">Partnered closely with engineering, marketing, and executive leadership.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4 class="stat-value">Innovation First</h4>
+        <p class="stat-label">Adaptable to AI & New Tools</p>
+        <p class="stat-detail">Actively using modern AI tools to conceptualize and prototype rapidly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="footer-title">Let's Build Something Meaningful Together</h2>
+        </div>
+        <button onclick="openContactModal()" class="btn btn-primary btn-large">
+          Start a Conversation
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Grace's Portfolio. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Dribbble</a>
+          <a href="#" class="social-link">ReadCV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY MODAL -->
+  <div id="case-study-modal" class="modal-overlay" onclick="if(event.target === this) closeCaseStudyModal()">
+    <div class="modal-container" style="max-width: 56rem;">
+      <button onclick="closeCaseStudyModal()" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div id="modal-body-content">
+        <!-- Injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL -->
+  <div id="contact-modal" class="modal-overlay" onclick="if(event.target === this) closeContactModal()">
+    <div class="modal-container" style="max-width: 32rem;">
+      <button onclick="closeContactModal()" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-tag">Contact Grace</span>
+        <h3 class="section-title" style="font-size: 2rem; margin-top: 0.25rem;">Let's Work Together</h3>
+        <p style="font-size: 0.75rem; color: #736B63; margin-top: 0.25rem;">Fill in your details below and I'll get back to you within 24 hours.</p>
+      </div>
+
+      <form onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" required placeholder="Jane Doe" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" required placeholder="jane@example.com" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Project Details</label>
+          <textarea rows="4" required placeholder="Tell me about your project or opportunity..." class="form-textarea"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.875rem; margin-top: 0.5rem; justify-content: center;">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
